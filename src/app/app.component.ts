@@ -10,15 +10,15 @@ export class AppComponent {
 
   buttonFunction () {
 
-    fetch('https://worker-ts3.bukhovskyi.workers.dev/post', {
+    fetch('https://worker-ts5.bukhovskyi.workers.dev/add', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
+       body: JSON.stringify({
         name: 'John Doe',
         email: 'johndoe@example.com'
-      })
+       })
     })
       .then(response => response.json())
       .then(data => console.log(data))
