@@ -1,40 +1,10 @@
 <h1>Recipes</h1>
 <h2>{{title}}</h2>
 
+<app-addproduct></app-addproduct>
 
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Enlish name (for ID)</mat-label>
-    <input #engName matInput>
-  </mat-form-field>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Назва продукту</mat-label>
-    <input #ukrName matInput>
-  </mat-form-field>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Калорійність (на 1000 гр)</mat-label>
-    <input #сalories type="number" min="0" value="0" step="1" matInput>
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <mat-label>Жири</mat-label>
-    <input #fat type="number" min="0" value="0" step="1" matInput>
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <mat-label>Вуглеводи</mat-label>
-    <input #carbohydrates type="number" min="0" value="0" step="1" matInput>
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <mat-label>Білки</mat-label>
-    <input #protein type="number" min="0" value="0" step="1" matInput>
-  </mat-form-field>
-
-<button mat-raised-button color="accent" (click)="add_product_button_function(engName.value, ukrName.value, fat.value, carbohydrates.value, protein.value)">Accent</button>
-</form>
 
 <br> <br>
 
