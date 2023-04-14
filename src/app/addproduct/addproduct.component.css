@@ -1,34 +1,17 @@
 .addproduct-form {
   background-color: black;
     
-  
   }
   
   .add-product-full-width {
     width: 100%;
     
   }
-  /* .add_product_aria {
-    flex-grow: 2
-  }
-  .product-list-area {
-flex-grow: 60;
-  } */
-  .flex-container {
-    display: grid;
-    grid-template-columns: 300px auto;
-    background-color: DodgerBlue;
-  }
-  .flex-container > div {
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
-    
-  }
+
   button {
     width: 100%;
-    
-  }
+     }
+
   h2 {
     color: rgb(135, 161, 161);
   }

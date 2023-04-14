@@ -1,0 +1,11 @@
+.flex-container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    background-color: rgb(3, 36, 69);
+  }
+  .flex-container > div {
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    
+  }
