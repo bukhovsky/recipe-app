@@ -1,34 +1,46 @@
-<p>addproduct works!</p>
-<form class="example-form">
-    <mat-form-field class="example-full-width">
+<div class="flex-container">
+
+<div class="add_product_aria">
+<h2>Додати продукт:</h2>
+
+    <form class="addproduct-form">
+    <mat-form-field class="add-product-full-width">
       <mat-label>Enlish name (for ID)</mat-label>
       <input #engName matInput>
     </mat-form-field>
   
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="add-product-full-width">
       <mat-label>Назва продукту</mat-label>
       <input #ukrName matInput>
     </mat-form-field>
   
-    <mat-form-field class="example-full-width">
-      <mat-label>Калорійність (на 1000 гр)</mat-label>
-      <input #сalories type="number" min="0" value="0" step="1" matInput>
+    <mat-form-field class="add-product-full-width">
+      <mat-label>Калорійність (на 100 гр)</mat-label>
+      <input #сalories type="number" min="0"  step="0.1" matInput>
     </mat-form-field>
   
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="add-product-full-width">
       <mat-label>Жири</mat-label>
-      <input #fat type="number" min="0" value="0" step="1" matInput>
+      <input #fat type="number" min="0"  step="0.1" matInput>
     </mat-form-field>
   
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="add-product-full-width">
       <mat-label>Вуглеводи</mat-label>
-      <input #carbohydrates type="number" min="0" value="0" step="1" matInput>
+      <input #carbohydrates type="number" min="0.1"  step="1" matInput>
     </mat-form-field>
   
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="add-product-full-width">
       <mat-label>Білки</mat-label>
-      <input #protein type="number" min="0" value="0" step="1" matInput>
+      <input #protein type="number" min="0"  step="0.1" matInput>
     </mat-form-field>
   
-  <button mat-raised-button color="accent" (click)="add_product_button_function(engName.value, ukrName.value, fat.value, carbohydrates.value, protein.value)">Accent</button>
+  <button mat-fab extended color="accent" (click)="add_product_button_function(engName.value, ukrName.value, fat.value, carbohydrates.value, protein.value)">Додати</button>
+  
+   
   </form>
+</div>
+
+<div class="product-list-area">
+    <h2>Список продуктів</h2></div>
+
+</div>
