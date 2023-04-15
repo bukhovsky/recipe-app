@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ProductslistComponent {
 
+itemfromKV = {
+  engName: "", 
+  ukrName: "", 
+  сalories: "",
+  fat: "", 
+  carbohydrates: "", 
+  protein: "",
+  }
+
+productString = []
+
+
 getproducts(){
   fetch('https://worker-ts5.bukhovskyi.workers.dev/all', {
     method: 'GET',
@@ -18,7 +30,12 @@ getproducts(){
     
   })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+      this.productString = data
+      console.log(this.productString)
+      
+      //this.productString = `${this.itemfromKV.engName} ${this.itemfromKV.ukrName} ${this.itemfromKV.сalories} ${this.itemfromKV.fat} ${this.itemfromKV.carbohydrates} ${this.itemfromKV.protein}`
+      })
     .catch(error => console.error(error));
 }
 

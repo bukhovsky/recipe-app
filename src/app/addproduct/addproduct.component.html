@@ -16,7 +16,7 @@
   
     <mat-form-field class="add-product-full-width">
       <mat-label>Калорійність (на 100 гр)</mat-label>
-      <input #сalories type="number" min="0"  step="0.1" matInput>
+      <input #calories type="number" min="0"  step="0.1" matInput>
     </mat-form-field>
   
     <mat-form-field class="add-product-full-width">
@@ -34,7 +34,7 @@
       <input #protein type="number" min="0"  step="0.1" matInput>
     </mat-form-field>
   
-  <button mat-fab extended color="accent" (click)="add_product_button_function(engName.value, ukrName.value, fat.value, carbohydrates.value, protein.value)">Додати</button>
+  <button mat-fab extended color="accent" (click)="add_product_button_function(engName.value, ukrName.value, calories.value, fat.value, carbohydrates.value, protein.value)">Додати</button>
   
    
 </form>
