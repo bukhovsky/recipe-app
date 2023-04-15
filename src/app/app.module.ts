@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ProductslistComponent } from './productslist/productslist.component';
+import { ProductsComponent } from './products/products.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddproductComponent,
+    ProductslistComponent,
+    ProductsComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

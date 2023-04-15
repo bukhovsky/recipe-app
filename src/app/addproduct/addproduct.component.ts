@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-addproduct',
+  templateUrl: './addproduct.component.html',
+  styleUrls: ['./addproduct.component.css']
 })
-export class AppComponent {
-  title = 'recipe-app';
+export class AddproductComponent {
 
-  
-  add_product_button_function (engName: string, ukrName:string, fat:string, carbohydrates:string, protein: string) {
+  add_product_button_function (engName: string, ukrName:string, сalories:string, fat:string, carbohydrates:string, protein: string) {
     const newObj = {
       engName: engName, 
       ukrName: ukrName, 
+      сalories: сalories,
       fat: fat, 
       carbohydrates: carbohydrates, 
       protein: protein,
@@ -31,4 +30,5 @@ export class AppComponent {
       .catch(error => console.error(error));
     console.log(newObj)
   }
+
 }
