@@ -1,4 +1,16 @@
-<p>productslist works!</p>
-<button (click)="getproducts()">x</button>
+<button mat-fab extended color="accent" (click)="getproducts()">Оновити список</button>
 
-<h1>{{productString}}</h1>
+<ul>
+    <li *ngFor="let item of productObjects"> 
+        {{item.engName}} 
+        {{item.ukrName}}
+        {{item.calories}}
+        {{item.fat}}
+        {{item.carbohydrates}}
+        {{item.protein}}
+    </li>
+</ul>
+
+
+
+

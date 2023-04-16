@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AddproductComponent {
 
-  add_product_button_function (engName: string, ukrName:string, сalories:string, fat:string, carbohydrates:string, protein: string) {
+  add_product_button_function (engName: string, ukrName:string, calories:string, fat:string, carbohydrates:string, protein: string) {
     const newObj = {
       engName: engName, 
       ukrName: ukrName, 
-      сalories: сalories,
+      calories: calories,
       fat: fat, 
       carbohydrates: carbohydrates, 
       protein: protein,
