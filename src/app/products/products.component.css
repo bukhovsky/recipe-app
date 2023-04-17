@@ -1,7 +1,7 @@
 .flex-container {
     display: grid;
     grid-template-columns: 300px auto;
-    background-color: rgb(3, 36, 69);
+    background-color: rgb(9, 88, 29);
   }
   .flex-container > div {
     background-color: black;
